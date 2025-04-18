@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { FileUpload } from "@/components/FileUpload";
 import { CSVViewer } from "@/components/CSVViewer";
@@ -23,31 +22,103 @@ export default function Index() {
     window.URL.revokeObjectURL(url);
   };
 
-  const generateSSFParametersCSV = () => {
-    const ssfParameters = [
-      ['Parameter', 'Setting', 'Unit', 'Recommended Range', 'Notes'],
-      ['Temperature', '28', '°C', '25-30', 'Optimal for most fungi'],
-      ['pH', '5.5', 'pH units', '4.5-6.5', 'Varies by microorganism'],
-      ['Moisture Content', '65', '%', '60-70', 'Critical for growth'],
-      ['Substrate Type', 'Rice Bran', '-', '-', 'Agricultural waste preferred'],
-      ['Particle Size', '2-5', 'mm', '1-5', 'Affects aeration and surface area'],
-      ['Aeration Rate', '0.5', 'vvm', '0.1-1.0', 'Low for fungal cultures'],
-      ['Inoculum Size', '10', '%', '5-15', 'Percentage of substrate'],
-      ['Incubation Time', '7', 'days', '5-14', 'Depends on target product'],
-      ['Agitation Frequency', '2', 'times/day', '1-3', 'Prevents heat buildup'],
-      ['Bed Height', '5', 'cm', '3-10', 'Affects heat transfer'],
-      ['Substrate Pretreatment', 'Autoclaved', '-', '-', 'For sterilization'],
-      ['Nitrogen Source', 'Ammonium Sulfate', '-', '-', 'Supplementation if needed'],
-      ['C:N Ratio', '15:1', '-', '10:1-30:1', 'Optimizes microbial growth'],
-      ['Water Activity', '0.98', 'aw', '0.95-0.99', 'Critical parameter'],
-      ['Fermentation Scale', 'Lab', '-', '-', 'Lab/Pilot/Industrial'],
-      ['Supplementation', 'Mineral Salts', '-', '-', 'As required by strain'],
-      ['Recovery Method', 'Solvent Extraction', '-', '-', 'Product dependent'],
-      ['Relative Humidity', '85', '%', '80-95', 'Environmental control'],
-      ['Light Conditions', 'Dark', '-', '-', 'Species dependent']
+  const generateConflictAnalysisCSV = () => {
+    const conflictParameters = [
+      [
+        'Country',
+        'State_Intention',
+        'History_of_War',
+        'Neighbor_Relations',
+        'Geopolitical_Affiliation',
+        'Superpower_Interest',
+        'Conflict_Intensity',
+        'Casualties',
+        'Displacement',
+        'Actors_Involved',
+        'Geographical_Spread',
+        'Economic_Damage',
+        'International_Involvement',
+        'Media_Coverage',
+        'Weapon_Use',
+        'Economic_Status',
+        'Military_Capability',
+        'Political_Stability',
+        'Socio_Cultural',
+        'External_Influence',
+        'Environmental_Factors'
+      ],
+      [
+        'Syria',
+        'Regime Survival',
+        'Multiple',
+        'Strained',
+        'Non-aligned',
+        'High',
+        'Severe',
+        'High',
+        'Massive',
+        'Multiple',
+        'Nationwide',
+        'Severe',
+        'Extensive',
+        'High',
+        'Conventional/Chemical',
+        'Low',
+        'Moderate',
+        'Unstable',
+        'Complex',
+        'Significant',
+        'Urban Destruction'
+      ],
+      [
+        'Ukraine',
+        'Territorial Defense',
+        'Recent',
+        'Mixed',
+        'Western-aligned',
+        'Very High',
+        'High',
+        'Significant',
+        'Large-scale',
+        'State/Non-state',
+        'Regional',
+        'Extensive',
+        'Global',
+        'Extensive',
+        'Conventional',
+        'Developing',
+        'Growing',
+        'Challenged',
+        'Unified',
+        'Major',
+        'Agricultural Impact'
+      ],
+      [
+        'Yemen',
+        'Power Control',
+        'Ongoing',
+        'Complex',
+        'Regional',
+        'Moderate',
+        'High',
+        'High',
+        'Significant',
+        'Multiple Factions',
+        'Widespread',
+        'Severe',
+        'Regional',
+        'Moderate',
+        'Mixed',
+        'Poor',
+        'Limited',
+        'Fragmented',
+        'Divided',
+        'Regional',
+        'Drought/Famine'
+      ]
     ];
     
-    setCsvData(ssfParameters);
+    setCsvData(conflictParameters);
   };
 
   return (
@@ -60,12 +131,12 @@ export default function Index() {
             <FileUpload onFileLoad={setCsvData} />
             <div className="flex justify-center">
               <Button 
-                onClick={generateSSFParametersCSV}
+                onClick={generateConflictAnalysisCSV}
                 variant="outline"
                 className="gap-2"
               >
                 <FileSpreadsheet className="h-4 w-4" />
-                Generate SSF Parameters Sample
+                Generate Conflict Analysis Sample
               </Button>
             </div>
           </div>
