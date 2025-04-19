@@ -1,5 +1,5 @@
 
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import { ChartTooltipContent } from '@/components/ui/chart';
 import { southAsiaData } from '@/data/southAsiaConflictData';
 
