@@ -1,0 +1,347 @@
+
+export interface ConflictParameter {
+  Country: string;
+  State_Intention: string;
+  History_of_War: string;
+  Neighbor_Relations: string;
+  Geopolitical_Affiliation: string;
+  Superpower_Interest: string;
+  Conflict_Intensity: string;
+  Casualties: string;
+  Displacement: string;
+  Actors_Involved: string;
+  Geographical_Spread: string;
+  Economic_Damage: string;
+  International_Involvement: string;
+  Media_Coverage: string;
+  Weapon_Use: string;
+  Economic_Status: string;
+  Military_Capability: string;
+  Political_Stability: string;
+  Socio_Cultural: string;
+  External_Influence: string;
+  Environmental_Factors: string;
+  // New parameters
+  Cyber_Capabilities: string;
+  Diplomatic_Relations: string;
+  Human_Rights_Status: string;
+  Infrastructure_Development: string;
+  Internal_Security: string;
+  Regional_Leadership: string;
+  Technology_Access: string;
+  Trade_Dependencies: string;
+  Water_Security: string;
+  Youth_Population: string;
+}
+
+export const southAsiaHeaders = [
+  'Country',
+  'State_Intention',
+  'History_of_War',
+  'Neighbor_Relations',
+  'Geopolitical_Affiliation',
+  'Superpower_Interest',
+  'Conflict_Intensity',
+  'Casualties',
+  'Displacement',
+  'Actors_Involved',
+  'Geographical_Spread',
+  'Economic_Damage',
+  'International_Involvement',
+  'Media_Coverage',
+  'Weapon_Use',
+  'Economic_Status',
+  'Military_Capability',
+  'Political_Stability',
+  'Socio_Cultural',
+  'External_Influence',
+  'Environmental_Factors',
+  'Cyber_Capabilities',
+  'Diplomatic_Relations',
+  'Human_Rights_Status',
+  'Infrastructure_Development',
+  'Internal_Security',
+  'Regional_Leadership',
+  'Technology_Access',
+  'Trade_Dependencies',
+  'Water_Security',
+  'Youth_Population'
+];
+
+export const southAsiaData: ConflictParameter[] = [
+  {
+    Country: 'India',
+    State_Intention: 'Global Power Aspirations',
+    History_of_War: 'Border Conflicts/Internal',
+    Neighbor_Relations: 'Complex/Strategic',
+    Geopolitical_Affiliation: 'Strategic Autonomy',
+    Superpower_Interest: 'Very High',
+    Conflict_Intensity: 'Low to Moderate',
+    Casualties: 'Limited/Sporadic',
+    Displacement: 'Internal Migration',
+    Actors_Involved: 'State/Separatist/Terror',
+    Geographical_Spread: 'Border/Internal Regions',
+    Economic_Damage: 'Limited Impact',
+    International_Involvement: 'Strategic Partnerships',
+    Media_Coverage: 'High Global Interest',
+    Weapon_Use: 'Advanced/Nuclear',
+    Economic_Status: 'Major Economy',
+    Military_Capability: 'Self-Reliant/Nuclear',
+    Political_Stability: 'Democratic/Stable',
+    Socio_Cultural: 'Highly Diverse',
+    External_Influence: 'Balanced/Strategic',
+    Environmental_Factors: 'Climate/Water Stress',
+    Cyber_Capabilities: 'Advanced/Growing',
+    Diplomatic_Relations: 'Strong Global Network',
+    Human_Rights_Status: 'Mixed Records/Challenges',
+    Infrastructure_Development: 'Rapidly Expanding',
+    Internal_Security: 'Complex/Multi-layered',
+    Regional_Leadership: 'Dominant/Assertive',
+    Technology_Access: 'High/Indigenous Dev',
+    Trade_Dependencies: 'Diversified/Growing',
+    Water_Security: 'Stressed/Interstate Issues',
+    Youth_Population: 'Large/Dynamic'
+  },
+  {
+    Country: 'Pakistan',
+    State_Intention: 'Regional Security',
+    History_of_War: 'Multiple Wars/Ongoing',
+    Neighbor_Relations: 'India-Centric/Complex',
+    Geopolitical_Affiliation: 'China-Allied',
+    Superpower_Interest: 'High Strategic',
+    Conflict_Intensity: 'Moderate to High',
+    Casualties: 'Significant/Ongoing',
+    Displacement: 'Border/Internal',
+    Actors_Involved: 'State/Non-State/Terror',
+    Geographical_Spread: 'Border/Tribal Areas',
+    Economic_Damage: 'Significant Impact',
+    International_Involvement: 'China/US Interest',
+    Media_Coverage: 'Regional Focus',
+    Weapon_Use: 'Nuclear/Conventional',
+    Economic_Status: 'Economic Challenges',
+    Military_Capability: 'Nuclear/Limited Conv.',
+    Political_Stability: 'Political Transitions',
+    Socio_Cultural: 'Islamic Republic',
+    External_Influence: 'Strong External',
+    Environmental_Factors: 'Floods/Drought',
+    Cyber_Capabilities: 'Moderate/Developing',
+    Diplomatic_Relations: 'Limited/Regional',
+    Human_Rights_Status: 'Significant Concerns',
+    Infrastructure_Development: 'CPEC Focused',
+    Internal_Security: 'Challenging/Volatile',
+    Regional_Leadership: 'Aspiring/Limited',
+    Technology_Access: 'Moderate/Dependent',
+    Trade_Dependencies: 'China Dependent',
+    Water_Security: 'Downstream Vulnerable',
+    Youth_Population: 'Large/Underutilized'
+  },
+  {
+    Country: 'Bangladesh',
+    State_Intention: 'Economic Development',
+    History_of_War: 'Independence War',
+    Neighbor_Relations: 'Regional Cooperation',
+    Geopolitical_Affiliation: 'Balanced Approach',
+    Superpower_Interest: 'Moderate',
+    Conflict_Intensity: 'Very Low',
+    Casualties: 'Historical',
+    Displacement: 'Climate Migration',
+    Actors_Involved: 'Political Parties',
+    Geographical_Spread: 'Urban/Coastal',
+    Economic_Damage: 'Climate Related',
+    International_Involvement: 'Development Aid',
+    Media_Coverage: 'Development Focus',
+    Weapon_Use: 'Basic Military',
+    Economic_Status: 'Fast Growing',
+    Military_Capability: 'Limited/Defensive',
+    Political_Stability: 'Democratic/Stable',
+    Socio_Cultural: 'Bengali/Islamic',
+    External_Influence: 'Development Partners',
+    Environmental_Factors: 'Sea Level/Floods',
+    Cyber_Capabilities: 'Emerging/Basic',
+    Diplomatic_Relations: 'Improving/Regional',
+    Human_Rights_Status: 'Improving/Challenges',
+    Infrastructure_Development: 'Rapid Growth',
+    Internal_Security: 'Stable/Improving',
+    Regional_Leadership: 'Economic Success',
+    Technology_Access: 'Growing/Improving',
+    Trade_Dependencies: 'Garment Export',
+    Water_Security: 'River Dependencies',
+    Youth_Population: 'Large/Productive'
+  },
+  {
+    Country: 'Afghanistan',
+    State_Intention: 'Internal Consolidation',
+    History_of_War: 'Continuous Conflict',
+    Neighbor_Relations: 'Regional Tension',
+    Geopolitical_Affiliation: 'Currently Isolated',
+    Superpower_Interest: 'Declining Interest',
+    Conflict_Intensity: 'High Internal',
+    Casualties: 'Significant Historic',
+    Displacement: 'Large Scale/Ongoing',
+    Actors_Involved: 'Multiple Factions',
+    Geographical_Spread: 'Nationwide/Variable',
+    Economic_Damage: 'Severe/Chronic',
+    International_Involvement: 'Limited Current',
+    Media_Coverage: 'Reduced Coverage',
+    Weapon_Use: 'Light Weapons',
+    Economic_Status: 'Humanitarian Crisis',
+    Military_Capability: 'Irregular Forces',
+    Political_Stability: 'Transitional Phase',
+    Socio_Cultural: 'Tribal/Religious',
+    External_Influence: 'Regional Powers',
+    Environmental_Factors: 'Drought/Resource',
+    Cyber_Capabilities: 'Limited/Basic',
+    Diplomatic_Relations: 'Restricted/Limited',
+    Human_Rights_Status: 'Severe Concerns',
+    Infrastructure_Development: 'Damaged/Limited',
+    Internal_Security: 'Highly Challenging',
+    Regional_Leadership: 'Isolated/Limited',
+    Technology_Access: 'Very Limited',
+    Trade_Dependencies: 'Limited/Informal',
+    Water_Security: 'Scarcity Issues',
+    Youth_Population: 'Large/Unemployed'
+  },
+  {
+    Country: 'Nepal',
+    State_Intention: 'Stability Focus',
+    History_of_War: 'Civil War History',
+    Neighbor_Relations: 'India-China Balance',
+    Geopolitical_Affiliation: 'Non-Aligned',
+    Superpower_Interest: 'Low',
+    Conflict_Intensity: 'Very Low',
+    Casualties: 'Post-Conflict',
+    Displacement: 'Labor Migration',
+    Actors_Involved: 'Political Groups',
+    Geographical_Spread: 'Mountainous Regions',
+    Economic_Damage: 'Development Needs',
+    International_Involvement: 'Aid Dependent',
+    Media_Coverage: 'Limited Coverage',
+    Weapon_Use: 'Basic Security',
+    Economic_Status: 'Developing',
+    Military_Capability: 'Limited Mountain',
+    Political_Stability: 'Federal Democracy',
+    Socio_Cultural: 'Multi-Ethnic',
+    External_Influence: 'India/China Influence',
+    Environmental_Factors: 'Mountain/Glacial',
+    Cyber_Capabilities: 'Basic/Developing',
+    Diplomatic_Relations: 'Regional Focus',
+    Human_Rights_Status: 'Improving/Mixed',
+    Infrastructure_Development: 'Challenging Terrain',
+    Internal_Security: 'Stable/Improving',
+    Regional_Leadership: 'Mountain Economy',
+    Technology_Access: 'Limited/Growing',
+    Trade_Dependencies: 'India Dependent',
+    Water_Security: 'Abundant Resources',
+    Youth_Population: 'Migration Prone'
+  },
+  {
+    Country: 'Sri Lanka',
+    State_Intention: 'Economic Recovery',
+    History_of_War: 'Civil War Ended',
+    Neighbor_Relations: 'Regional Trade',
+    Geopolitical_Affiliation: 'Non-Aligned',
+    Superpower_Interest: 'Moderate',
+    Conflict_Intensity: 'Post-Conflict',
+    Casualties: 'Historical',
+    Displacement: 'Return Migration',
+    Actors_Involved: 'Political/Economic',
+    Geographical_Spread: 'Island-Wide',
+    Economic_Damage: 'Economic Crisis',
+    International_Involvement: 'IMF/Regional',
+    Media_Coverage: 'Economic Focus',
+    Weapon_Use: 'Internal Security',
+    Economic_Status: 'Recovery Phase',
+    Military_Capability: 'Self-Defense',
+    Political_Stability: 'Democratic/Crisis',
+    Socio_Cultural: 'Multi-Ethnic',
+    External_Influence: 'Regional/Global',
+    Environmental_Factors: 'Coastal/Climate',
+    Cyber_Capabilities: 'Moderate/Growing',
+    Diplomatic_Relations: 'Rebuilding/Active',
+    Human_Rights_Status: 'Post-War Recovery',
+    Infrastructure_Development: 'Mixed Progress',
+    Internal_Security: 'Stable/Recovering',
+    Regional_Leadership: 'Tourism/Services',
+    Technology_Access: 'Moderate/Improving',
+    Trade_Dependencies: 'Diverse Partners',
+    Water_Security: 'Seasonal Variation',
+    Youth_Population: 'Educated/Skilled'
+  },
+  {
+    Country: 'Bhutan',
+    State_Intention: 'Sustainable Development',
+    History_of_War: 'Limited Conflict',
+    Neighbor_Relations: 'India Partnership',
+    Geopolitical_Affiliation: 'India Protected',
+    Superpower_Interest: 'Very Low',
+    Conflict_Intensity: 'None Current',
+    Casualties: 'Minimal',
+    Displacement: 'Controlled',
+    Actors_Involved: 'State Actors',
+    Geographical_Spread: 'Mountainous',
+    Economic_Damage: 'Limited',
+    International_Involvement: 'Development Aid',
+    Media_Coverage: 'Minimal',
+    Weapon_Use: 'Basic Defense',
+    Economic_Status: 'Developing',
+    Military_Capability: 'India Supported',
+    Political_Stability: 'Monarchy/Stable',
+    Socio_Cultural: 'Buddhist/Traditional',
+    External_Influence: 'India Guided',
+    Environmental_Factors: 'Mountain Ecology',
+    Cyber_Capabilities: 'Basic/Emerging',
+    Diplomatic_Relations: 'Limited/Indian',
+    Human_Rights_Status: 'Generally Good',
+    Infrastructure_Development: 'Careful Growth',
+    Internal_Security: 'Very Stable',
+    Regional_Leadership: 'Environmental Model',
+    Technology_Access: 'Selective/Growing',
+    Trade_Dependencies: 'India Dominated',
+    Water_Security: 'Abundant Resources',
+    Youth_Population: 'Small/Educated'
+  },
+  {
+    Country: 'Maldives',
+    State_Intention: 'Climate Survival',
+    History_of_War: 'No Major Conflicts',
+    Neighbor_Relations: 'Regional Trade',
+    Geopolitical_Affiliation: 'Strategic Maritime',
+    Superpower_Interest: 'Growing',
+    Conflict_Intensity: 'None',
+    Casualties: 'None',
+    Displacement: 'Climate Threat',
+    Actors_Involved: 'Political Parties',
+    Geographical_Spread: 'Archipelagic',
+    Economic_Damage: 'Climate Impact',
+    International_Involvement: 'Climate Aid',
+    Media_Coverage: 'Climate Focus',
+    Weapon_Use: 'Coast Guard',
+    Economic_Status: 'Tourism Based',
+    Military_Capability: 'Maritime Security',
+    Political_Stability: 'Democratic',
+    Socio_Cultural: 'Island Muslim',
+    External_Influence: 'Regional Powers',
+    Environmental_Factors: 'Sea Level Rise',
+    Cyber_Capabilities: 'Limited/Tourism',
+    Diplomatic_Relations: 'Climate Advocacy',
+    Human_Rights_Status: 'Generally Good',
+    Infrastructure_Development: 'Tourism Focused',
+    Internal_Security: 'Stable/Tourism',
+    Regional_Leadership: 'Climate Voice',
+    Technology_Access: 'Tourism Driven',
+    Trade_Dependencies: 'Tourism/Imports',
+    Water_Security: 'Desalination Dependent',
+    Youth_Population: 'Small/Service Sector'
+  }
+];
+
+export const generateCSVData = (): string[][] => {
+  return [
+    southAsiaHeaders,
+    ...southAsiaData.map(country => 
+      southAsiaHeaders.map(header => 
+        country[header as keyof ConflictParameter]
+      )
+    )
+  ];
+};
