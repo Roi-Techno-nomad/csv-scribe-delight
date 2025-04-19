@@ -7,6 +7,7 @@ import { generateCSVData } from "@/data/southAsiaConflictData";
 import { ConflictIntensityChart } from "@/components/charts/ConflictIntensityChart";
 import { GeopoliticalChart } from "@/components/charts/GeopoliticalChart";
 import { StabilityRadarChart } from "@/components/charts/StabilityRadarChart";
+import { LiveUpdates } from "@/components/LiveUpdates";
 
 export default function Index() {
   const [csvData, setCsvData] = useState<string[][]>([]);
@@ -88,6 +89,8 @@ export default function Index() {
                 <StabilityRadarChart />
               </div>
             )}
+            
+            <LiveUpdates />
             
             <CSVViewer data={csvData} />
           </div>
