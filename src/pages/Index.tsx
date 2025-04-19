@@ -2,11 +2,15 @@ import { useState } from "react";
 import { FileUpload } from "@/components/FileUpload";
 import { CSVViewer } from "@/components/CSVViewer";
 import { Button } from "@/components/ui/button";
-import { Download, FileSpreadsheet } from "lucide-react";
+import { Download, FileSpreadsheet, ChartBar } from "lucide-react";
 import { generateCSVData } from "@/data/southAsiaConflictData";
+import { ConflictIntensityChart } from "@/components/charts/ConflictIntensityChart";
+import { GeopoliticalChart } from "@/components/charts/GeopoliticalChart";
+import { StabilityRadarChart } from "@/components/charts/StabilityRadarChart";
 
 export default function Index() {
   const [csvData, setCsvData] = useState<string[][]>([]);
+  const [showCharts, setShowCharts] = useState(false);
 
   const handleDownload = () => {
     if (!csvData.length) return;
@@ -60,6 +64,14 @@ export default function Index() {
                   Upload New File
                 </Button>
                 <Button
+                  variant="outline"
+                  onClick={() => setShowCharts(!showCharts)}
+                  className="gap-2"
+                >
+                  <ChartBar className="h-4 w-4" />
+                  {showCharts ? 'Hide Charts' : 'Show Charts'}
+                </Button>
+                <Button
                   onClick={handleDownload}
                   className="gap-2"
                 >
@@ -68,6 +80,15 @@ export default function Index() {
                 </Button>
               </div>
             </div>
+            
+            {showCharts && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <ConflictIntensityChart />
+                <GeopoliticalChart />
+                <StabilityRadarChart />
+              </div>
+            )}
+            
             <CSVViewer data={csvData} />
           </div>
         )}
