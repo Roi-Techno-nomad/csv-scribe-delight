@@ -44,7 +44,7 @@ export function LiveUpdates() {
               </AlertDescription>
               <div className="flex justify-between items-center mt-1">
                 <span className="text-xs text-muted-foreground italic">
-                  Source: {update.source}
+                  Source: <a href={update.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-500">{update.source}</a>
                 </span>
                 <span className="text-xs text-muted-foreground">
                   {update.timestamp.toLocaleTimeString()}
