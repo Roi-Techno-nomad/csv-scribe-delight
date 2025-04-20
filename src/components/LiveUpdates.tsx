@@ -30,16 +30,26 @@ export function LiveUpdates() {
             className="flex items-center"
           >
             {getIcon(update.type)}
-            <div className="ml-3">
-              <AlertTitle className="text-sm font-medium">
-                {update.country} - {update.type.charAt(0).toUpperCase() + update.type.slice(1)} Update
-              </AlertTitle>
+            <div className="ml-3 flex-grow">
+              <div className="flex justify-between items-start">
+                <AlertTitle className="text-sm font-medium">
+                  {update.country} - {update.type.charAt(0).toUpperCase() + update.type.slice(1)} Update
+                </AlertTitle>
+                <span className="text-xs text-muted-foreground">
+                  {update.region}
+                </span>
+              </div>
               <AlertDescription className="text-sm mt-1">
                 {update.description}
               </AlertDescription>
-              <p className="text-xs text-muted-foreground mt-1">
-                {update.timestamp.toLocaleTimeString()}
-              </p>
+              <div className="flex justify-between items-center mt-1">
+                <span className="text-xs text-muted-foreground italic">
+                  Source: {update.source}
+                </span>
+                <span className="text-xs text-muted-foreground">
+                  {update.timestamp.toLocaleTimeString()}
+                </span>
+              </div>
             </div>
           </Alert>
         ))}
